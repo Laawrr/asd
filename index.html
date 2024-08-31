@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try inspect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>HELLO WORLD<a href="pass.html">!</a></h1>
+
+    <div class="main">
+        <h2>NOTHING TO SEE HERE</h2> 
+    </div>
+
+    <div class="img">
+        <img src="giphy.gif">
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.main {
+    text-align: center;
+    animation: colorChange 5s infinite;
+    font-size: xx-large;
+}
+.img {
+    text-align: center;
+    border: none;
+}
+a {
+    text-decoration: none;
+    color:black
+}
+
+@keyframes colorChange {
+    0% {
+         color: rgb(255, 0, 0); 
+    }
+    33% {
+         color: rgb(0, 255, 0); 
+    }
+    75% {
+        color: rgb(0, 0, 255);
+    }
+    100% {
+        color: rgb(255, 0, 0);
+    }
+  }

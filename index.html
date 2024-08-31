@@ -19,11 +19,28 @@
 
     <script>
         document.addEventListener('contextmenu', event => event.preventDefault());
+        
         document.onkeydown = function(e) {
-            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) {
+            // Block F12 (keyCode 123)
+            if (e.keyCode === 123) {
                 return false;
             }
-        }
+            
+            // Block Ctrl+Shift+I (keyCode 73 for 'I')
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+                return false;
+            }
+            
+            // Block Ctrl+U (keyCode 85 for 'U')
+            if (e.ctrlKey && e.keyCode === 85) {
+                return false;
+            }
+            
+            // Block Ctrl+S (keyCode 83 for 'S')
+            if (e.ctrlKey && e.keyCode === 83) {
+                return false;
+            }
+        };
     </script>
 </body>
 </html>
